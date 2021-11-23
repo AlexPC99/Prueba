@@ -7,7 +7,5 @@ from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
 from fpdf import FPDF
 
-options = webdriver.ChromeOptions()
-options.add_experimental_option('excludeSwitches', ['enable-logging'])
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome("chromedriver")
 driver.get("https://www.pressreader.com/mexico/el-universal/20211103/page/1/textview")
